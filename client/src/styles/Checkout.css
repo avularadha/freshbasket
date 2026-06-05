@@ -1,0 +1,178 @@
+.checkout-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  padding: 30px 15px;
+}
+
+.checkout-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.checkout-header {
+  margin-bottom: 25px;
+}
+
+.checkout-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.checkout-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.card,
+.summary-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card h2,
+.summary-card h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address-form input {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.address-form input:focus {
+  border-color: #16a34a;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-option:hover {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.payment-option input {
+  width: 18px;
+  height: 18px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.green {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.place-order-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #16a34a;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.summary-card {
+  position: sticky;
+  top: 100px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}@media screen and (max-width: 768px) {
+
+  .checkout-page {
+    padding: 15px;
+  }
+
+  .checkout-header h1 {
+    font-size: 28px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .summary-card {
+    position: static;
+  }
+
+  .card,
+  .summary-card {
+    padding: 18px;
+  }
+
+  .summary-total {
+    font-size: 18px;
+  }
+
+  .place-order-btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+}

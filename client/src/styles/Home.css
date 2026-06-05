@@ -1,0 +1,167 @@
+.home-content {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+   overflow-x:visible;
+}
+
+/* FIXED SIDEBAR */
+.sidebar-wrapper {
+  width: 250px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 19px;
+  align-items: start;
+  margin-right: 10px;
+  height: fit-content;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #0a8f3c,
+    #16c85d
+  );
+
+  color: white;
+  border-radius: 24px;
+
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .home-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+    position: static;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+}
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.shop-btn {
+  background: #ff9d5c;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.offer-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.stats h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.stats p {
+  margin: 0;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 580px;
+  border-radius: 20px;
+}
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 20px 0;
+  font-weight: 800;
+}

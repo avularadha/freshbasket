@@ -1,0 +1,159 @@
+.top-banner {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.top-banner span {
+  color: #ffd166;
+  font-weight: 600;
+}
+
+.navbar {
+  background: #0a7c35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  gap: 20px;
+  position:sticky;
+  top:0;
+  z-index: 1000;
+  
+  width:100%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box {
+  width: 55px;
+  height: 55px;
+  background: #7ed957;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.logo-section h2 {
+  color: white;
+  font-size: 22px;
+}
+
+.location p {
+  color: white;
+  font-size: 12px;
+}
+
+.location h4 {
+  color: white;
+  font-size: 14px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  max-width: 550px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-box button {
+  border: none;
+  background: #8be04e;
+  width: 60px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn,
+.cart-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-btn {
+  background: #146c43;
+  color: white;
+}
+
+.cart-btn {
+  background: #f08c4f;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:768px){
+
+  .navbar{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px;
+  }
+
+  .logo-section{
+    flex:1;
+  }
+
+  .location-section{
+    flex:1;
+  }
+
+  .search-container{
+    flex:2;
+  }
+
+  .nav-actions{
+    display:flex;
+    gap:8px;
+  }
+
+  .search-container input{
+    width:100%;
+    font-size:14px;
+  }
+
+  .login-btn,
+  .cart-btn{
+    padding:8px 12px;
+    font-size:12px;
+  }
+}
