@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/Checkout.css";
 import { useLocation } from "react-router-dom";
+import {toast} from "react-toastify";
 const Checkout = () => {
     
   const [paymentMethod, setPaymentMethod] = useState("COD");
@@ -12,7 +13,7 @@ const Checkout = () => {
 
   const handlePlaceOrder = () => {
     
-    alert("🎉 Order Placed Successfully!");
+    toast.success("🎉 Order Placed Successfully!");
   };
 
   return (

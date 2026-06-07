@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({searchTerm,setSearchTerm}) => {
   const {totalItems} = useCart();
   const navigate = useNavigate();
   return (
@@ -23,13 +23,18 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search fruits, vegetables, curry items..."
+            value ={searchTerm}
+            onChange={(e)=>
+              setSearchTerm(e.target.value)
+            }
           />
           <button>🔍</button>
         </div>
 
         <div className="nav-actions">
-          <button onClick={()=> navigate("/login")} className="login-btn" >👤</button>
-          <button className="cart-btn" onClick={()=>navigate("/cart")}> 🛒 +{totalItems}</button>
+          <button className="icon-btn" onClick={() =>navigate("/wishlist")}>❤️</button>
+          <button onClick={()=> navigate("/profile")} className="icon-btn" >👤</button>
+          <button className="icon-btn" onClick={()=>navigate("/cart")}> 🛒 +{totalItems}</button>
         </div>
       </nav>
     </>

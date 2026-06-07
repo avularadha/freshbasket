@@ -1,7 +1,7 @@
 import { useCart } from "../context/CartContext";
 import "../styles/Cart.css";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import BottomNav from "../components/BottomNav";
 function Cart() {
   const navigate= useNavigate()
   const {
@@ -79,6 +79,7 @@ function Cart() {
       </div>
     </div>
   );
+    <BottomNav/>
 }
 
 export default Cart;

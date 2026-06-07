@@ -5,7 +5,7 @@ const categories = [
   { name: "Fruits", icon: "🍎",  },
   { name: "vegetables", icon: "🥦",},
   { name: "leafy vegetables", icon: "🌶️",  },
-  { name: "Herbs & Greens", icon: "🌿",  },
+  { name: "Dairy & Eggs", icon: "🥛",  },
   { name: "Organic", icon: "🌱", },
   { name: "Salad Leaves", icon: "🥗",},
   { name: "Exotic Fruits", icon: "🍋",},
@@ -18,10 +18,6 @@ const Sidebar = ({
 }) => {
   return (
     <div className="sidebar">
-      <h3 className="sidebar-title">
-        CATEGORIES
-      </h3>
-
       {categories.map((item) => (
         <div
           key={item.name}

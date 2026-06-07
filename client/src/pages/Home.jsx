@@ -3,22 +3,33 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products";
+import BottomNav from "../components/BottomNav";
 import "../styles/Home.css";
+
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm,setSearchTerm] = useState("");
 
   const filteredProducts =
-    selectedCategory === "All"
-      ? products
-      : products.filter(
-          product =>
-            product.category === selectedCategory
-        );
+    products.filter((product)=>{
+      const categoryMatch =
+      selectedCategory === "All" ||
+      product.category ===selectedCategory;
+
+      const searchMatch =
+      product.name
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+
+  return categoryMatch && searchMatch;
+    });
 
   return (
     <>
-      <Navbar />
+      <Navbar searchTerm={searchTerm} 
+      setSearchTerm = {setSearchTerm}
+      />
 
       <div className="home-content">
 
@@ -43,32 +54,15 @@ const Home = () => {
                 Right Now.
               </h1>
 
-              <div className="hero-buttons">
-                <button className="shop-btn">
-                  Shop Now
-                </button>
+             <div className="hero-buttons">
+  <button className="shop-btn">
+    🛒 Shop Now
+  </button>
 
-                <button className="offer-btn">
-                  See Offers
-                </button>
-              </div>
-
-              <div className="stats">
-                <div>
-                  <h2>200+</h2>
-                  <p>Products</p>
-                </div>
-
-                <div>
-                  <h2>10 min</h2>
-                  <p>Delivery</p>
-                </div>
-
-                <div>
-                  <h2>4.9 ⭐</h2>
-                  <p>Rating</p>
-                </div>
-              </div>
+  <button className="offer-btn">
+    🎁 See Offers
+  </button>
+</div>
             </div>
 
             <div className="hero-image">
@@ -80,7 +74,8 @@ const Home = () => {
           </div>
 
           <div className="products-grid">
-            {filteredProducts.map(product => (
+            {filteredProducts.length>0?(
+            filteredProducts.map(product => (
               <ProductCard
                 key={product.id}
                 id={product.id}
@@ -89,13 +84,20 @@ const Home = () => {
                 image={product.image}
                 weight={product.weight}
               />
-            ))}
+            ))
+          ):(
+            <h2>No products found</h2>
+          )
+        }
           </div>
 
         </div>
       </div>
+      <BottomNav/>
     </>
+    
   );
+  
 };
 
 export default Home;

@@ -1,7 +1,7 @@
 import { useCart } from "../context/CartContext";
 import "../styles/ProductCard.css";
-
-const ProductCard = ({
+import { useWishlist } from "../context/Wishlist";
+const ProductCard=({
   id,
   name,
   price,
@@ -18,15 +18,27 @@ const ProductCard = ({
   const cartItem = cart.find(
     (item) => item.id === id
   );
+  const {wishlist,toggleWishlist} = useWishlist();
+  const isWishlisted = wishlist.some(item => item.id ===id);
 
   return (
     <div className="product-card">
       <div className="product-image-container">
         
-        <button className="wishlist-btn">
-          ♡
-        </button>
-
+        <button
+  className="wishlist-btn"
+  onClick={() =>
+    toggleWishlist({
+      id,
+      name,
+      price,
+      image,
+      weight,
+    })
+  }
+>
+  {isWishlisted ? "❤️" : "🤍"}
+</button>
         <img
           src={image}
           alt={name}

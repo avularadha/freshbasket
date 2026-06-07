@@ -2,7 +2,7 @@ import react from "react";
 import "../styles/Login.css";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-
+import  {toast} from "react-toastify";
 function Login() {
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ function Login() {
       password === user.password
     ) {
       localStorage.setItem("isLoggedIn", "true");
-      alert("Login Successful ✅");
+      toast.success("Login Successful ✅");
       navigate("/");
     } else {
       alert("Invalid Email or Password");

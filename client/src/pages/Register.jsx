@@ -1,14 +1,15 @@
 import {Link,useNavigate} from "react-router-dom";
 import "../styles/Register.css";
 import { useState } from "react";
-
+import {toast} from "react-toastify";
 function Register() {
     const navigate = useNavigate();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] =
-    useState("");
+  const [password, setPassword] = useState("");
+  const [phone,setPhone] = useState("")
+  const [address,setAddress] = useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +18,8 @@ function Register() {
       name,
       email,
       password,
+      phone,
+      address,
     };
 
     localStorage.setItem(
@@ -24,8 +27,8 @@ function Register() {
       JSON.stringify(user)
     );
 
-    alert("Registration Successful ✅");
-    navigate("/login");
+    toast.success("Registration Successful ✅");
+    navigate("/");
   };
 
   return (
@@ -56,6 +59,20 @@ function Register() {
           placeholder="Password"
            value={password}
           onChange={(e)=>setPassword(e.target.value)}
+          required
+        />
+         <input
+          type="text"
+          placeholder="Phone Number"
+           value={phone}
+          onChange={(e)=>setPhone(e.target.value)}
+          required
+        />
+         <input
+          type="text"
+          placeholder="Address"
+           value={address}
+          onChange={(e)=>setAddress(e.target.value)}
           required
         />
 
