@@ -2,19 +2,17 @@ import { useState } from "react";
 import "../styles/Checkout.css";
 import { useLocation } from "react-router-dom";
 import {toast} from "react-toastify";
+import { useNavigate } from "react-router-dom";
+
 const Checkout = () => {
-    
+  const navigate = useNavigate()
   const [paymentMethod, setPaymentMethod] = useState("COD");
   const location = useLocation();
   const totalAmount = location.state?.totalPrice || 0
    
   console.log(location.state)
   console.log(totalAmount)
-
-  const handlePlaceOrder = () => {
-    
-    toast.success("🎉 Order Placed Successfully!");
-  };
+  
 
   return (
     <div className="checkout-page">
@@ -140,7 +138,7 @@ const Checkout = () => {
 
               <button
                 className="place-order-btn"
-                onClick={handlePlaceOrder}
+                onClick={()=>navigate("/order-success")}
               >
                 Place Order
               </button>
@@ -154,6 +152,6 @@ const Checkout = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Checkout;

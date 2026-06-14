@@ -2,6 +2,7 @@ import {Link,useNavigate} from "react-router-dom";
 import "../styles/Register.css";
 import { useState } from "react";
 import {toast} from "react-toastify";
+import axios from "axios"
 function Register() {
     const navigate = useNavigate();
 
@@ -11,7 +12,7 @@ function Register() {
   const [phone,setPhone] = useState("")
   const [address,setAddress] = useState("")
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const user = {
@@ -21,14 +22,23 @@ function Register() {
       phone,
       address,
     };
+    try {
+  const response = await axios.post(
+    "https://freshbasket-1-8qqf.onrender.com/api/auth/register",
+    user
+  );
 
-    localStorage.setItem(
-      "user",
-      JSON.stringify(user)
-    );
+  localStorage.setItem(
+    "user",
+    JSON.stringify(response.data)
+  );
 
-    toast.success("Registration Successful ✅");
-    navigate("/");
+  toast.success("Registration Successful ✅");
+  navigate("/");
+} catch (error) {
+  console.log(error.response?.data)
+  toast.error(error.response?.data?.message || "Registration Failed ❌");
+}
   };
 
   return (

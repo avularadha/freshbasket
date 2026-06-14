@@ -5,6 +5,8 @@ const products = [
     category:"Fruits",
     weight:"2 units",
     price: 120,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106360_fjxsge",
     
   },
@@ -14,6 +16,8 @@ const products = [
     category:"Fruits",
     weight:"2 units",
     price: 45,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106369_g8gezb",
     
@@ -23,6 +27,8 @@ const products = [
     name: "Banana",
     category:"Fruits",
     weight:"3 units",
+    rating:4.5,
+    reviews:120,
     price: 24,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106371_ui9uvd",
@@ -35,6 +41,8 @@ const products = [
     category:"Fruits",
     weight:"4 units",
     price: 164,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106375_h3e2y8",
       
@@ -46,6 +54,8 @@ const products = [
     category:"Fruits",
     weight:"1 units",
     price: 58,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106376_y7rlvl",
       
@@ -57,6 +67,8 @@ const products = [
     category:"leafy vegetables",
     weight:"100g",
     price: 19,
+    rating:4.5,
+    reviews:120,
     image:
     "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106531_jcfenw",
        
@@ -67,6 +79,8 @@ const products = [
     category:"leafy vegetables",
     weight:"90-100g",
     price: 9,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106532_q5yqtg",
       
@@ -78,6 +92,8 @@ const products = [
     category:"leafy vegetables",
     weight:"50g",
     price:9,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106534_vqace1",
       
@@ -89,6 +105,8 @@ const products = [
     category:"leafy vegetables",
     weight:"450-550g",
     price:9,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106537_mxcajo",
       
@@ -100,6 +118,8 @@ const products = [
     category:"leafy vegetables",
     weight:"250g",
     price: 19,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106538_wflux2",
       
@@ -112,6 +132,8 @@ const products = [
     category:"leafy vegetables",
     weight:"240-260g",
     price: 19,
+    rating:4.5,
+    reviews:120,
     image: 
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106539_jvl609",
     
@@ -122,6 +144,8 @@ const products = [
     category:"leafy vegetables",
     weight:"400-600g",
     price: 26,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106540_ravvca",
     
@@ -132,6 +156,8 @@ const products = [
     category:"vegetables",
     weight:"240-260g",
     price: 10,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106564_ygm3u3",
     
@@ -142,6 +168,8 @@ const products = [
     category:"vegetables",
     weight:"2 units",
     price: 18,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106565_yutdyy",
     
@@ -153,6 +181,8 @@ const products = [
     category:"vegetables",
     weight:"450-550g",
     price: 47,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106566_vyw6cs",
     
@@ -164,6 +194,8 @@ const products = [
     category:"vegetables",
     weight:"190-210g",
     price: 19,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106567_fjhpkj",
     
@@ -175,6 +207,8 @@ const products = [
     category:"vegetables",
     weight:"500g",
     price: 24,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106568_qetjvt",
     
@@ -185,6 +219,8 @@ const products = [
     category:"vegetables",
     weight:"400-600g",
     price: 29,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106569_vrpahc",
     
@@ -195,6 +231,8 @@ const products = [
     category:"vegetables",
     weight:"500g",
     price: 25,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106570_in3izt",
     
@@ -205,6 +243,8 @@ const products = [
     category:"vegetables",
     weight:"250g",
     price: 18,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106571_x7njpi",
     
@@ -215,6 +255,8 @@ const products = [
     category:"vegetables",
     weight:"450-550g",
     price: 36,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106572_fl7l4n",
     
@@ -225,6 +267,8 @@ const products = [
     category:"vegetables",
     weight:"240g-260g",
     price: 9,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106573_kct3rc",
     
@@ -235,6 +279,8 @@ const products = [
     category:"vegetables",
     weight:"400-600g",
     price: 70,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106574_fw9kxh",
     
@@ -245,6 +291,8 @@ const products = [
     category:"vegetables",
     weight:"450-550g",
     price: 19,
+    rating:4.5,
+    reviews:120,
     image:
       "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000106575_tyozwp",
     
@@ -255,6 +303,8 @@ const products = [
     category:"Fruits",
     weight:"1 units",
     price: 49,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107304_ldxsie", 
   },
   {
@@ -263,6 +313,8 @@ const products = [
     category:"Fruits",
     weight:"1 units",
     price:79 ,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107305_jt8ibp", 
   },
   {
@@ -271,6 +323,8 @@ const products = [
     category:"Fruits",
     weight:"500g",
     price: 59 ,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107310_icz21s", 
   },
    {
@@ -278,6 +332,8 @@ const products = [
     name: "Papaya Semi Ripe",
     category:"Fruits",
     weight:"1 units",
+    rating:4.5,
+    reviews:120,
     price: 71 ,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107313_mypgdm", 
   },
@@ -287,6 +343,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"3 units",
     price: 167,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107314_klck70", 
   },
    {
@@ -295,6 +353,8 @@ const products = [
     category:"Fruits",
     weight:"450-500g",
     price: 83 ,
+    rating:4.5,
+    reviews:120,
     image: "https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107317_fwcwhi", 
   },
  
@@ -304,6 +364,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"500g",
     price:31,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107656_dnsh71",
   },
    {
@@ -312,6 +374,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"1L",
     price:74,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107657_xfs1li",
   },
    {
@@ -320,6 +384,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"500g",
     price:49,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107658_zlyqu2",
   },
    {
@@ -328,6 +394,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"1L",
     price:108,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107661_llypj9",
   },
    {
@@ -336,6 +404,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"200g",
     price:79,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107662_j7gsi3",
   },
    {
@@ -344,6 +414,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"240g",
     price:115,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107663_v33qml",
   },
    {
@@ -352,6 +424,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"100g",
     price:58,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107664_kvkws2",
   },
    {
@@ -360,6 +434,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"500g",
     price:280,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107665_intupu",
   }
   ,
@@ -369,6 +445,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"100g",
     price:81,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107670_yxigk2",
   },
    {
@@ -377,6 +455,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"200g",
     price:123,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107671_znatjl",
   },
    {
@@ -385,6 +465,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"6 Units",
     price:45,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107672_izuj3h",
   },
    {
@@ -393,6 +475,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"30 pcs",
     price:211,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107677_tltsmd",
   },
    {
@@ -401,6 +485,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"6 Units",
     price:101,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107678_nvv3if"
   },
   {
@@ -409,6 +495,8 @@ const products = [
     category:"Dairy & Eggs",
     weight:"10 Units",
     price:123,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107685_ywenbm",
   },
   {
@@ -417,6 +505,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"1 Units",
     price:67,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107686_v26efn"
   },
    {
@@ -425,6 +515,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"150g",
     price:89,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107687_sw69tj"
   },
    {
@@ -433,6 +525,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"120g",
     price:200,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107690_rrzems"
   },
    {
@@ -441,6 +535,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"105g",
     price:187,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107691_alhk7b"
   },
    {
@@ -449,6 +545,8 @@ const products = [
     category:"Exotic Fruits",
     weight:"2 Units",
     price:200,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107693_kceme4"
   },
    {
@@ -457,6 +555,8 @@ const products = [
     category:"Fruits",
     weight:"100g",
     price:46,
+    rating:4.5,
+    reviews:120,
     image:"https://res.cloudinary.com/dqgnbdlkz/image/upload/f_auto,q_auto/1000107694_htwqml"
   },
 ];

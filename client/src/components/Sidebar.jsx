@@ -3,8 +3,8 @@ import "../styles/Sidebar.css";
 const categories = [
   {name:"All"},
   { name: "Fruits", icon: "🍎",  },
-  { name: "vegetables", icon: "🥦",},
-  { name: "leafy vegetables", icon: "🌶️",  },
+  { name: "vegetables", icon: "🌶️",},
+  { name: "leafy vegetables", icon: "🥦",  },
   { name: "Dairy & Eggs", icon: "🥛",  },
   { name: "Organic", icon: "🌱", },
   { name: "Salad Leaves", icon: "🥗",},

@@ -3,37 +3,35 @@ import "../styles/Login.css";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import  {toast} from "react-toastify";
+import axios from "axios";
 function Login() {
     const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const user = JSON.parse(localStorage.getItem("user"));
+  try {
+    const response = await axios.post(
+      "https://freshbasket-1-8qqf.onrender.com/api/auth/login",
+      { email, password }
+    );
 
-    if (!user) {
-      alert("Please register first");
-      return;
-    }
+    localStorage.setItem(
+      "user",
+      JSON.stringify(response.data.user)
+    );
 
-    if (
-      email === user.email &&
-      password === user.password
-    ) {
-      localStorage.setItem("isLoggedIn", "true");
-      toast.success("Login Successful ✅");
-      navigate("/");
-    } else {
-      alert("Invalid Email or Password");
-    }
-  };
+    localStorage.setItem("token", response.data.token);
 
-
-
-
+    toast.success("Login Successful ✅");
+    navigate("/");
+  } catch (error) {
+    toast.error(error.response?.data?.message || "Invalid Email or Password ❌");
+  }
+};
   return (
     <div className="login-container">
         <form onSubmit={handleSubmit}>

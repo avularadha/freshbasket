@@ -1,0 +1,71 @@
+.success-container {
+  min-height: 100vh;
+  background: #f7f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.success-card h1 {
+  color: #0c831f;
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.success-card p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.continue-btn {
+  background: #0c831f;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  background: #086b18;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .success-card {
+    padding: 25px;
+  }
+
+  .success-card h1 {
+    font-size: 24px;
+  }
+
+  .success-card p {
+    font-size: 16px;
+  }
+
+  .continue-btn {
+    width: 100%;
+  }
+}

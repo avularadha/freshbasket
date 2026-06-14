@@ -1,6 +1,7 @@
 import { useCart } from "../context/CartContext";
 import "../styles/ProductCard.css";
 import { useWishlist } from "../context/Wishlist";
+import {Link} from "react-router-dom";
 const ProductCard=({
   id,
   name,
@@ -21,7 +22,9 @@ const ProductCard=({
   const {wishlist,toggleWishlist} = useWishlist();
   const isWishlisted = wishlist.some(item => item.id ===id);
 
+
   return (
+    <Link to ={`/product/${id}`} className="product-link">
     <div className="product-card">
       <div className="product-image-container">
         
@@ -44,10 +47,12 @@ const ProductCard=({
           alt={name}
           className="product-image"
         />
+      
       </div>
 
       <div className="product-details">
         <h3>{name}</h3>
+         
 
         <p className="weight">{weight}</p>
 
@@ -95,8 +100,9 @@ const ProductCard=({
             </button>
           </div>
         )}
-      </div>
+ </div>
     </div>
+    </Link>
   );
 };
 
